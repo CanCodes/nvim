@@ -19,6 +19,7 @@ plugins = {
     'nvim-tree/nvim-web-devicons',
     'github/copilot.vim',
     {'fatih/vim-go', run = ':GoUpdateBinaries'},
+    'tpope/vim-fugitive',
 }
 
 require('lazy').setup(plugins)

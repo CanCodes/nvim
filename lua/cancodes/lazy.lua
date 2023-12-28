@@ -20,6 +20,10 @@ plugins = {
     'github/copilot.vim',
     {'fatih/vim-go', run = ':GoUpdateBinaries'},
     'tpope/vim-fugitive',
+    
+    -- LSP Plugins
+    {'williamboman/mason.nvim'},
+    {'williamboman/mason-lspconfig.nvim'},
     {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
     {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'},

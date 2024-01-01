@@ -17,6 +17,7 @@ require('mason-lspconfig').setup({
       "eslint",
       "lua-ls",
       "pyright",
+      "templ",
       "clangd",
       "cmakelang",
       "java_language_server",

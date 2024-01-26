@@ -23,3 +23,9 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 
 vim.opt.colorcolumn = "80"
+
+vim.filetype.add({
+    extension = {
+        templ = "templ",
+    },
+})

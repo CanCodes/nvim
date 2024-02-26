@@ -21,6 +21,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 300
 vim.opt.backup = false
 vim.opt.writebackup = false
+vim.wo.relativenumber = true
 
 vim.opt.colorcolumn = "80"
 

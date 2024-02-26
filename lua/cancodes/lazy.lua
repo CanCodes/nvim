@@ -30,7 +30,8 @@ plugins = {
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
     { 'junegunn/fzf',                     run = function() vim.fn['fzf#install']() end },
-    { 'junegunn/fzf.vim' }
+    { 'junegunn/fzf.vim' },
+    { 'tpope/vim-surround' }
 }
 
 require('lazy').setup(plugins)

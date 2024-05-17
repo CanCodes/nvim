@@ -20,18 +20,26 @@ plugins = {
     'github/copilot.vim',
     { 'fatih/vim-go',                    run = ':GoUpdateBinaries' },
     'tpope/vim-fugitive',
-    { "folke/todo-comments.nvim",         dependencies = { "nvim-lua/plenary.nvim" } },
+    { "folke/todo-comments.nvim",            dependencies = { "nvim-lua/plenary.nvim" } },
     -- LSP Plugins
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
-    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
+    { 'VonHeikemen/lsp-zero.nvim',           branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
-    { 'junegunn/fzf',                     run = function() vim.fn['fzf#install']() end },
-    { 'junegunn/fzf.vim' },
-    { 'tpope/vim-surround' }
+    -- { 'junegunn/fzf',                     run = function() vim.fn['fzf#install']() end },
+    -- { 'junegunn/fzf.vim' },
+    { 'tpope/vim-surround' },
+    { 'nvim-telescope/telescope.nvim',       branch = '0.1.x',                          dependencies = { 'nvim-lua/plenary.nvim' } },
+    { 'airblade/vim-gitgutter' },
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl",                              opts = {} },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+    }
 }
 
 require('lazy').setup(plugins)
